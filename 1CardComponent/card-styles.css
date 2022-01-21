@@ -1,0 +1,195 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap");
+
+:root {
+	--bg-gray: #f7f7f7;
+	--white: #ffffff;
+	--text-gray: #757575;
+	--hover-gray: #e1e1e1;
+	--purple: #6200ee;
+	--hover-purple: #f9f2ff;
+}
+
+* {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+
+html {
+	font-family: "Roboto", sans-serif;
+}
+
+body {
+	background-color: var(--bg-gray);
+	display: flex;
+	flex-direction: column;
+	flex-wrap: wrap;
+	align-items: center;
+	/* height: 100vh; */
+}
+
+hr {
+	align-items: left;
+	min-width: 85vw;
+	margin-top: 1rem;
+}
+
+.main-heading,
+.main-description {
+	margin: 1rem;
+}
+
+/* 													*/
+/* <--- BASIC CARD CSS ---> */
+/* 													*/
+
+.card {
+	background-color: var(--white);
+	border-radius: 0.3rem;
+	align-items: center;
+	justify-content: center;
+	margin-bottom: 1rem;
+}
+
+.basic-card {
+	display: flex;
+	flex-direction: column;
+	width: 20rem;
+}
+
+/* HEADER */
+
+.header {
+	display: flex;
+	flex-direction: column;
+}
+
+.basic-img {
+	width: 20rem;
+	aspect-ratio: 1.8;
+	border-top-left-radius: 0.2rem;
+	border-top-right-radius: 0.2rem;
+}
+
+.main-text {
+	display: flex;
+	flex-direction: column;
+	margin: 1rem;
+}
+
+.author-text {
+	margin-top: 0.5rem;
+	color: var(--text-gray);
+}
+
+.description {
+	margin: 0.5rem 1rem;
+	font-size: 0.875rem;
+	color: var(--text-gray);
+}
+
+/* FOOTER */
+
+.footer {
+	display: flex;
+	align-items: center;
+	/* justify-content: center; */
+	margin: 1rem 0rem;
+}
+
+.button-row {
+	margin-left: 0.5rem;
+}
+
+.text-button {
+	padding: 0.5rem;
+	border: none;
+	border-radius: 0.1rem;
+	background-color: var(--white);
+	color: var(--purple);
+	font-size: 0.875rem;
+}
+
+.text-button:hover {
+	background-color: var(--hover-purple);
+}
+
+.icon-row {
+	margin-left: auto;
+	margin-right: 1rem;
+}
+
+.icon-btn {
+	padding: 0.3rem;
+	border: none;
+	border-radius: 5rem;
+	background-color: var(--white);
+}
+
+.icon-btn:hover {
+	background-color: var(--hover-gray);
+}
+
+/* 															  	*/
+/* <--- BASIC WITH HEADER CSS ---> */
+/* 																*/
+
+.header-for-basic-with-header {
+	flex-direction: column-reverse;
+}
+
+.basic-with-header-img {
+	border-radius: 0rem;
+}
+
+/* 															  	*/
+/* <--- BASIC WITH ONLY BUTTONS CSS ---> */
+/* <--- BASIC WITH ONLY ICONS CSS ---> */
+/* 																*/
+
+.hide-class {
+	display: none;
+}
+
+/* 															  	*/
+/* <--- BASIC WITH TEXT OVER MEDIA CSS ---> */
+/* 																*/
+
+.text-over-img-div {
+	z-index: 0;
+}
+
+.main-text-over-img {
+	z-index: 10;
+	margin-top: -3.5rem;
+	color: var(--white);
+}
+
+.author-text-over-img {
+	color: var(--white);
+}
+
+/* 															  	*/
+/* <--- HORIZONTAL CARD CSS ---> */
+/* 																*/
+
+.horizontal-card {
+	width: 22rem;
+}
+
+.horizontal-img {
+	width: 7rem;
+	height: 7rem;
+	object-fit: cover;
+	border-bottom-right-radius: 0.2rem;
+}
+
+.horizontal-header {
+	flex-direction: row;
+	margin-bottom: 0rem;
+}
+
+.horizontal-footer {
+	margin-top: 0rem;
+	margin-bottom: 0.5rem;
+}
