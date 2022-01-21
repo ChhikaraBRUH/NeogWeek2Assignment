@@ -5,6 +5,7 @@
 	--white: #ffffff;
 	--conatiner-bg: #fda4af;
 	--chips-bg: #0284c7;
+	--shadow-gray: #757575;
 }
 
 * {
@@ -47,6 +48,7 @@ hr {
 	padding: 0.5rem;
 	border-radius: 1rem;
 	margin: 1rem;
+	box-shadow: 0 3px 6px var(--shadow-gray);
 }
 
 .chip {
@@ -66,4 +68,11 @@ hr {
 
 .end-icon {
 	margin-left: 0.4rem;
+	cursor: pointer;
+}
+
+/* Stacked Chips CSS */
+
+.stacked {
+	flex-direction: column;
 }
