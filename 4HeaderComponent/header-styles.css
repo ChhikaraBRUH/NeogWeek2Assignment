@@ -1,0 +1,83 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap");
+
+:root {
+	--bg-gray: #f7f7f7;
+	--white: #ffffff;
+	--text-gray: #757575;
+	--hover-gray: #e1e1e1;
+	--purple: #6200ee;
+	--hover-purple: #f9f2ff;
+}
+
+* {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+
+html {
+	font-family: "Roboto", sans-serif;
+}
+
+body {
+	background-color: var(--bg-gray);
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+hr {
+	align-items: left;
+	min-width: 85vw;
+	margin-top: 1rem;
+}
+
+h2,
+p {
+	margin: 1rem 2rem;
+}
+
+.main-heading,
+.main-description {
+	margin: 1rem;
+}
+
+/* 													*/
+/* <--- HEADER CSS ---> */
+/* 													*/
+
+.header-container {
+	width: 100vw;
+	display: flex;
+	background-color: var(--purple);
+	color: var(--white);
+	padding: 0.5rem 0.5rem;
+	align-items: center;
+}
+
+.left-icons-div {
+	padding: 0rem 0.5rem;
+}
+
+.right-icons-div {
+	margin-left: auto;
+}
+
+.right-icon {
+	margin: 0rem 0.2rem;
+}
+
+.material-icons {
+	cursor: pointer;
+	border-radius: 2rem;
+	padding: 0.5rem;
+}
+
+.material-icons:hover {
+	background-color: var(--text-gray);
+}
+
+.sticky {
+	position: sticky;
+	top: 0;
+}
