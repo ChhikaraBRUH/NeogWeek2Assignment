@@ -1,0 +1,98 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap");
+
+:root {
+	--bg-gray: #f7f7f7;
+	--white: #ffffff;
+	--gray: #333333;
+	--purple: #bb86fc;
+	--light-gray: #555555;
+}
+
+* {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+
+html {
+	font-family: "Roboto", sans-serif;
+}
+
+body {
+	background-color: var(--bg-gray);
+	display: flex;
+	flex-direction: column;
+	flex-wrap: wrap;
+	align-items: center;
+	position: relative;
+	height: 100vh;
+}
+
+hr {
+	align-items: left;
+	min-width: 85vw;
+	margin-top: 1rem;
+}
+
+.main-heading,
+.main-description {
+	margin: 1rem;
+}
+
+button {
+	padding: 0.5rem;
+	border: none;
+	border-radius: 0.2rem;
+	background-color: var(--gray);
+	color: var(--white);
+	font-weight: 700;
+	font-size: 1.1rem;
+	cursor: pointer;
+}
+
+/* 													*/
+/* <--- SNACKBAR CSS ---> */
+/* 													*/
+
+.snackbar-container {
+	display: flex;
+	background-color: var(--gray);
+	color: var(--white);
+	align-items: center;
+	justify-content: space-between;
+	gap: 1rem;
+	padding: 0.3rem 1rem;
+	border-radius: 0.2rem;
+	box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
+	position: absolute;
+	bottom: 30px;
+	left: 30px;
+	visibility: hidden;
+}
+
+.info-text {
+	font-size: 0.875rem;
+	padding: 0.5rem;
+}
+
+.text-btn {
+	color: var(--purple);
+	cursor: pointer;
+	padding: 0.5rem;
+	border-radius: 0.2rem;
+}
+
+.text-btn:hover {
+	background-color: var(--light-gray);
+}
+
+.material-icons {
+	font-size: smaller;
+	padding: 0.5rem;
+	border-radius: 2rem;
+	cursor: pointer;
+}
+
+.material-icons:hover {
+	background-color: var(--light-gray);
+}
