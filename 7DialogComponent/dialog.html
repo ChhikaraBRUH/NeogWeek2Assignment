@@ -1,0 +1,111 @@
+<!-- Dialogs inform users about a task and can contain critical information, require decisions, or involve multiple tasks. -->
+
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Dialog Component</title>
+
+		<link rel="stylesheet" href="/7DialogComponent/dialog-styles.css" />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Material+Icons"
+			rel="stylesheet"
+		/>
+	</head>
+	<body>
+		<div class="foreground"></div>
+		<a href="/"><---GO BACK HOME</a>
+		<h1 class="main-heading">Dialog Component</h1>
+		<p class="main-description">
+			Dialogs inform users about a task and can contain critical information,
+			require decisions, or involve multiple tasks.
+		</p>
+		<b>Click on the buttons below to see examples.</b>
+
+		<!--  -->
+		<!-- ALERT DIALOG HTML -->
+		<!--  -->
+
+		<hr />
+
+		<button class="alert-btn open-btn">Alert Dialog</button>
+
+		<div class="alert-dialog card">
+			<h3>Dialog Header</h3>
+			<p>Dialog body text goes here.</p>
+			<div class="btn-div">
+				<button class="action-btn action-btn1">ACTION 1</button>
+				<button class="action-btn action-btn2">ACTION 2</button>
+			</div>
+		</div>
+
+		<!--  -->
+		<!-- SIMPLE DIALOG HTML -->
+		<!--  -->
+
+		<button class="simple-btn open-btn">Simple Dialog</button>
+
+		<div class="simple-dialog card">
+			<h3>Dialog Header</h3>
+			<div class="simple-action-btn-div">
+				<div class="action-btn3 simple-action-btn">
+					<div class="material-icons">account_circle</div>
+					<div>Item 1</div>
+				</div>
+				<div class="action-btn4 simple-action-btn">
+					<div class="material-icons">account_circle</div>
+					<div>Item 2</div>
+				</div>
+				<div class="action-btn5 simple-action-btn">
+					<div class="material-icons">account_circle</div>
+					<div>Item 3</div>
+				</div>
+			</div>
+		</div>
+
+		<!--  -->
+		<!-- CONFIRMATION DIALOG HTML -->
+		<!--  -->
+
+		<button class="confirmation-btn open-btn">Confirmation Dialog</button>
+
+		<div class="confirmation-dialog card">
+			<h3>Dialog Header</h3>
+			<hr />
+			<div class="confirmation-radio">
+				<div class="confirmation-option">
+					<input type="radio" id="item-1" name="fav_language" value="item-1" />
+					<label for="item-1">Item 1</label><br />
+				</div>
+				<div class="confirmation-option">
+					<input type="radio" id="item-2" name="fav_language" value="item-2" />
+					<label for="item-2">Item 2</label><br />
+				</div>
+				<div class="confirmation-option">
+					<input type="radio" id="item-3" name="fav_language" value="item-3" />
+					<label for="item-3">Item 3</label><br />
+				</div>
+				<div class="confirmation-option">
+					<input type="radio" id="item-4" name="fav_language" value="item-4" />
+					<label for="item-4">Item 4</label><br />
+				</div>
+				<div class="confirmation-option">
+					<input type="radio" id="item-5" name="fav_language" value="item-5" />
+					<label for="item-5">Item 5</label><br />
+				</div>
+				<div class="confirmation-option">
+					<input type="radio" id="item-6" name="fav_language" value="item-6" />
+					<label for="item-6">Item 6</label><br />
+				</div>
+			</div>
+			<hr />
+			<div class="btn-div">
+				<button class="action-btn action-btn6">ACTION 1</button>
+				<button class="action-btn action-btn7">ACTION 2</button>
+			</div>
+		</div>
+	</body>
+	<script src="/7DialogComponent/dialog.js"></script>
+</html>
