@@ -1,0 +1,110 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap");
+
+:root {
+	--bg-gray: #f7f7f7;
+	--white: #ffffff;
+	--text-gray: #757575;
+	--hover-gray: #e1e1e1;
+	--purple: #6200ee;
+	--hover-purple: #f9f2ff;
+	--blue: #3b82f6;
+	--red: #dc2626;
+}
+
+* {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+
+html {
+	font-family: "Roboto", sans-serif;
+}
+
+body {
+	background-color: var(--bg-gray);
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	margin: 2rem;
+}
+
+hr {
+	align-items: left;
+	min-width: 85vw;
+	margin-top: 1rem;
+}
+
+.main-heading,
+.main-description {
+	margin: 1rem;
+}
+
+/* 													*/
+/* <--- BASIC CARD CSS ---> */
+/* 													*/
+
+.container {
+	display: flex;
+	flex-direction: column;
+	margin-top: 2rem;
+	margin-left: 1rem;
+	margin-right: auto;
+}
+
+.badge-text {
+	margin: 1rem 0rem;
+	display: flex;
+	gap: 0.5rem;
+	align-items: center;
+	position: relative;
+	width: fit-content;
+}
+
+.hook {
+	position: relative;
+	width: fit-content;
+}
+
+.button {
+	border-radius: 0.2rem;
+	border: none;
+	color: var(--white);
+	background-color: var(--blue);
+	padding: 0.4rem;
+	font-weight: 600;
+	box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
+}
+
+.badge {
+	position: absolute;
+	top: -0.7rem;
+	right: -1rem;
+	border-radius: 10rem;
+	padding: 0.1rem 0.4rem;
+	background-color: var(--purple);
+	color: var(--white);
+}
+
+.badge-large {
+	font-size: 1.5rem;
+	border-radius: 10rem;
+	padding: 0.1rem 0.6rem;
+	top: -1.2rem;
+	right: -1.6rem;
+}
+
+.btn-badge {
+	background-color: var(--red);
+}
+
+.toggle {
+	background-color: var(--white);
+	color: #000000;
+	border-color: #757575;
+	border: 1px solid;
+}
+
+.icon-badge {
+	right: -0.6rem;
+}

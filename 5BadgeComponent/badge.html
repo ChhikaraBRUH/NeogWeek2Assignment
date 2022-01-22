@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Badge Component</title>
+
+		<link rel="stylesheet" href="/5BadgeComponent/badge-style.css" />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Material+Icons"
+			rel="stylesheet"
+		/>
+	</head>
+	<body>
+		<a href="/"><---GO BACK HOME</a>
+		<h1 class="main-heading">Badge Component</h1>
+		<p class="main-description">
+			Badges are small status descriptors for UI elements. A badge consists of a
+			small circle, typically containing a number or other short set of
+			characters, that appears in proximity to another object.
+		</p>
+
+		<hr />
+		<div class="container">
+			<div class="badge-text hook text">
+				Text with a badge
+				<div class="badge">5</div>
+			</div>
+
+			<div class="badge-text hook text">
+				Text with a large badge
+				<div class="badge badge-large">4</div>
+			</div>
+
+			<div class="badge-text">
+				Button with a badge on the left
+				<button class="hook button">BUTTON</button>
+				<div class="badge btn-badge">8</div>
+			</div>
+
+			<div class="badge-text">
+				Button toggles badge visibility
+				<button class="hook button toggle">BUTTON</button>
+				<div class="badge toggle-badge">9</div>
+			</div>
+
+			<div class="badge-text">
+				Icon with a badge
+				<div class="material-icons hook icon">home</div>
+				<div class="badge icon-badge">2</div>
+			</div>
+		</div>
+	</body>
+
+	<script src="/5BadgeComponent/badge.js"></script>
+</html>
