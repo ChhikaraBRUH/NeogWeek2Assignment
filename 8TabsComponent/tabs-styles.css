@@ -101,3 +101,9 @@ hr {
 .scroll-container::-webkit-scrollbar {
 	display: none; /* Hide scrollbar for Chrome, Safari and Opera */
 }
+
+.clicked-tab {
+	color: var(--purple);
+	background-color: var(--click-purple);
+	border-bottom: var(--purple) 0.15rem solid;
+}
